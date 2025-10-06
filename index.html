@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Gym - Home</title>
+  <meta name="description" content="Apex Gym offers high-energy workouts, expert coaching, and a motivating community to help you reach peak fitness. Join today!" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-roboto text-white bg-[#1A1A1A]">
+  <!-- Header / Navigation -->
+  <header class="w-full fixed top-0 left-0 z-40 bg-[#1A1A1A]/90 backdrop-blur z-50 border-b border-white/10">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <!-- Brand -->
+      <a href="index.html" class="flex items-center gap-2 text-2xl font-oswald font-bold text-[#DC143C]">
+        Apex Gym
+      </a>
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center space-x-6 text-lg">
+        <a href="index.html" class="hover:text-[#FFFA]">Home</a>
+        <a href="about.html" class="hover:text-[#FFFA]">About</a>
+        <a href="contact.html" class="hover:text-[#FFFA]">Contact</a>
+      </div>
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-white hover:bg-white/10 focus:outline-none" aria-label="Open Menu">☰</button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-[#1A1A1A] border-t border-white/10">
+      <a href="index.html" class="block px-4 py-3 hover:bg-white/10">Home</a>
+      <a href="about.html" class="block px-4 py-3 hover:bg-white/10">About</a>
+      <a href="contact.html" class="block px-4 py-3 hover:bg-white/10">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section with background image -->
+  <section class="relative min-h-screen flex items-center justify-center" style="background-image: url(\"https://images.pexels.com/photos/4976933/pexels-photo-4976933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940\"); background-size: cover; background-position: center;">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 max-w-4xl text-center px-4 py-16 md:py-32">
+      <h1 class="font-oswald text-4xl md:text-6xl font-bold tracking-tight mb-4">Transform Your Body, <span class="block text-[#FF4500]">Train with the Pros</span></h1>
+      <p class="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">Join Apex Gym for state-of-the-art equipment, expert coaching, and a community that keeps you motivated to hit your peak every day.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="bg-[#FF4500] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#FF6A1A] transition-all duration-300">Start Free Trial</a>
+        <a href="about.html" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-all duration-300">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Preview -->
+  <section id="programs" class="py-16 bg-[#1A1A1A]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <h2 class="font-oswald text-3xl md:text-4xl mb-2 text-[#DC143C]">Our Programs</h2>
+        <p class="text-gray-300">Designed for strength, endurance, and mobility—built to scale with you.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <article class="bg-white/5 rounded-xl p-6 border border-white/20">
+          <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[#DC143C] mb-4 text-white">
+            <!-- Dumbbell Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h6M14 7h6M4 7a2 2 0 012-2h2l2 4-2 4H6l-2-6z"/>
+            </svg>
+          </div>
+          <h3 class="font-oswald text-xl mb-2">Strength & Conditioning</h3>
+          <p class="text-sm text-gray-200">Structured lifts, progressive overload, and mobility work to build real strength.</p>
+        </article>
+        <!-- Card 2 -->
+        <article class="bg-white/5 rounded-xl p-6 border border-white/20">
+          <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[#DC143C] mb-4 text-white">
+            <!-- Running icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 3l3 3-6 6-3-3 6-6z"/>
+            </svg>
+          </div>
+          <h3 class="font-oswald text-xl mb-2">Cardio & Endurance</h3>
+          <p class="text-sm text-gray-200">HIIT, steady-state cycling, and running tracks to boost stamina.</p>
+        </article>
+        <!-- Card 3 -->
+        <article class="bg-white/5 rounded-xl p-6 border border-white/20">
+          <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[#DC143C] mb-4 text-white">
+            <!-- Flexibility icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v6m0 6v6m-6-6h6m6 0h6"/>
+            </svg>
+          </div>
+          <h3 class="font-oswald text-xl mb-2">Mobility & Core</h3>
+          <p class="text-sm text-gray-200">Mobility sessions and core stability to support overall performance.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans Preview -->
+  <section id="plans" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <h2 class="font-oswald text-3xl md:text-4xl mb-2 text-[#DC143C]">Membership Plans</h2>
+        <p class="text-gray-300">Choose a plan that fits your schedule and goals.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white/5 rounded-xl p-6 border border-white/20 text-center">
+          <h4 class="font-oswald text-xl mb-2">Bronze</h4>
+          <p class="text-sm mb-4">Access to all gym floors during staffed hours</p>
+          <p class="text-2xl font-bold mb-4">$29/mo</p>
+          <a href="contact.html" class="inline-block mt-2 bg-[#FF4500] px-6 py-2 rounded-full">Join Now</a>
+        </div>
+        <div class="bg-white/5 rounded-xl p-6 border border-white/20 text-center">
+          <h4 class="font-oswald text-xl mb-2">Silver</h4>
+          <p class="text-sm mb-4">Bronze benefits + priority class access</p>
+          <p class="text-2xl font-bold mb-4">$49/mo</p>
+          <a href="contact.html" class="inline-block mt-2 bg-[#FF4500] px-6 py-2 rounded-full">Join Now</a>
+        </div>
+        <div class="bg-white/5 rounded-xl p-6 border border-white/20 text-center">
+          <h4 class="font-oswald text-xl mb-2">Gold</h4>
+          <p class="text-sm mb-4">All access, unlimited classes, guest passes</p>
+          <p class="text-2xl font-bold mb-4">$79/mo</p>
+          <a href="contact.html" class="inline-block mt-2 bg-[#FF4500] px-6 py-2 rounded-full">Join Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-12 bg-black/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <h3 class="font-oswald text-3xl md:text-4xl mb-2 text-[#DC143C]">Member Testimonials</h3>
+        <p class="text-gray-300">Real results from real members</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <blockquote class="bg-white/5 p-6 rounded-xl border border-white/20">
+          <p class="text-sm text-gray-200">"Apex Gym has pushed me to my limits and helped me stay consistent. The coaches are incredibly knowledgeable and supportive."</p>
+          <div class="mt-3 text-sm text-gray-300">- Jordan M.</div>
+        </blockquote>
+        <blockquote class="bg-white/5 p-6 rounded-xl border border-white/20">
+          <p class="text-sm text-gray-200">"The community here is amazing. I look forward to every workout and see real progress month after month."</p>
+          <div class="mt-3 text-sm text-gray-300">- Priya K.</div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Quick Visuals -->
+  <section class="py-12" aria-label="Gallery">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-6">
+        <h3 class="font-oswald text-3xl md:text-4xl text-[#DC143C]">Facility Gallery</h3>
+        <p class="text-gray-300">A peek inside Apex Gym</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://pixabay.com/get/gb43a26a8b78e98c5d49bd74ba051ce620cdce341636d291bd6c857c5a4978063490fdbb8eada9a9cd8e999190e6b7fb909836999de6182efb13bbb3c17714676_640.jpg" alt="Modern gym interior with cardio machines" class="w-full h-32 object-cover rounded-xl border border-white/20" />
+        <img src="https://images.unsplash.com/photo-1597075958693-75173d1c837f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw0fHxncm91cCUyMGZpdG5lc3MlMjBjbGFzcyUyMHdpdGglMjBwYXJ0aWNpcGFudHN8ZW58MHwwfHx8MTc1OTY0NjQ4Mnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Group fitness class in session" class="w-full h-32 object-cover rounded-xl border border-white/20" />
+        <img src="https://images.pexels.com/photos/15386224/pexels-photo-15386224.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Racks of free weights and benches" class="w-full h-32 object-cover rounded-xl border border-white/20" />
+        <img src="https://images.unsplash.com/photo-1716307046875-4c4ba2f43cab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw5fHxib3hpbmclMjBiYWdzJTIwYW5kJTIwdHJhaW5pbmclMjBzcGFjZXxlbnwwfDB8fHwxNzU5NzM5MjAzfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Boxing bags in a dedicated space" class="w-full h-32 object-cover rounded-xl border border-white/20" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Brand/About -->
+        <div class="space-y-3">
+          <h4 class="text-2xl font-oswald">Apex Gym</h4>
+          <p class="text-gray-300">Experience strength, endurance, and community. Your peak fitness starts here.</p>
+          <div class="flex space-x-3">
+            <a href="#" aria-label="Facebook" class="text-gray-300 hover:text-[#FF4500]">Facebook</a>
+            <a href="#" aria-label="Instagram" class="text-gray-300 hover:text-[#FF4500]">Instagram</a>
+          </div>
+        </div>
+        <!-- Contact -->
+        <div class="space-y-3">
+          <h4 class="text-lg font-semibold text-[#FFFA]">Contact</h4>
+          <p class="text-sm text-gray-300">123 Fitness Ave, Health District</p>
+          <p class="text-sm text-gray-300">(555) 012-3456</p>
+          <p class="text-sm text-gray-300">hello@apexgym.example</p>
+        </div>
+        <!-- Hours -->
+        <div class="space-y-3">
+          <h4 class="text-lg font-semibold text-[#FFFA]">Business Hours</h4>
+          <p class="text-sm text-gray-300">Mon-Fri: 5:00 AM – 11:00 PM</p>
+          <p class="text-sm text-gray-300">Sat-Sun: 6:00 AM – 9:00 PM</p>
+        </div>
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <h4 class="text-lg font-semibold text-[#FFFA]">Quick Links</h4>
+          <a href="index.html" class="block text-sm text-gray-300 hover:text-[#FF4500]">Home</a>
+          <a href="about.html" class="block text-sm text-gray-300 hover:text-[#FF4500]">About</a>
+          <a href="contact.html" class="block text-sm text-gray-300 hover:text-[#FF4500]">Contact</a>
+        </div>
+      </div>
+      <hr class="border-gray-700 my-6" />
+      <div class="flex justify-between items-center flex-wrap text-sm text-gray-400">
+        <span>© 2025 Apex Gym. All rights reserved.</span>
+        <span>Licensed & Insured • Fitness You Can Trust</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple mobile menu toggle (no external JS required)
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>
